@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>netstandard2.1</TargetFramework>
+	  <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<Compile Remove="IDeactivate.cs" />
+	<Compile Remove="INotifyPropertyChangedEx.cs" />
+	<Compile Remove="IViewAware.cs" />
+	<Compile Remove="PropertyChangedBase.cs" />
+	<Compile Remove="ResultExtensions.cs" />
+	<Compile Remove="SimpleResult.cs" />
+	<Compile Remove="TaskExtensions.cs" />
+	<Compile Remove="ViewAware.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="DynamicData" Version="7.1.16" />
+	<PackageReference Include="ReactiveUI" Version="13.3.2" />
+  </ItemGroup>
+
+</Project>
